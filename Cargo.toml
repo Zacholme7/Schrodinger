@@ -4,4 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-alloy = "0.8.3"
+heimdall-decompiler = { git = "https://github.com/Jon-Becker/heimdall-rs.git", tag = "0.8.5" }
+alloy = { version = "0.8.3", features = ["full"] }
+anyhow = "1.0.95"
+futures-util = "0.3.31"
+tokio = { version = "1.43.0", features = ["full"] }
